@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* styleHeader start */
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.Navigation-Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Navigation-Link a {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.Navigation-Link a:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Navigation-Link a:hover {
+  background-position: 0;
+}
+
+.Navigation-Link a:hover::before {
+  width: 100%;
+}
+
+.Navigation-Link a {
+  margin: 0 10px;
+}
+
+.UserMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UserMenu span {
+  cursor: pointer;
+}
+
+.menuToggle {
+  display: none;
+}
+
+.HembergerMenu {
+  display: none;
+}
+
+.UserMenu span {
+  margin: 0 5px;
+}
+
+.subMenu {
+  display: none;
+}
+
+.subMenu a {
+  text-decoration: none;
+}
+/* styleHeader end */
+
+/* styleContent start */
+.Content {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.Content1-detail {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.Conent1-Title {
+  margin: 50px;
+}
+.Conent1-img img {
+  width: 100%;
+  max-width: 650px;
+}
+
+.Content2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.Content2-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+}
+
+.Content2-detail {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Content2-detail-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.Content2-detail-container b {
+  margin: 0 35px;
+}
+.Content2-detail-container p {
+  margin: 0 35px;
+}
+
+.Content3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Content3-img img {
+  width: 100%;
+  height: auto;
+}
+
+.Content3-text-over-container {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.Content3-text-over-img-title {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Content3-detail-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 50px 0 100px 0;
+  width: 100%;
+}
+
+.Content3-detail-img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.Content3-detail-img p {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* styleContent end */
+
+/* styleFooter start */
+.Footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 60px;
+}
+
+.Footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer-logo img {
+  width: 50%;
+  margin: 10px;
+}
+
+.Navigation-Link-Footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+.Navigation-Link-Footer a {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.Navigation-Link-Footer a:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Navigation-Link-Footer a:hover {
+  background-position: 0;
+}
+
+.Navigation-Link-Footer a:hover::before {
+  width: 100%;
+}
+
+.Navigation-Link-Footer a {
+  margin: 0 10px;
+}
+
+.Footer-contract {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer-contract a {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.Footer-contract img {
+  width: 80%;
+}
+
+/* styleFooter end */
+
+/* css responsive support dasktop&moblie */
+@media (max-width: 700px) {
+  .Navigation-Link {
+    display: none;
+  }
+  .UserMenu {
+    display: none;
+  }
+
+  .Content1-detail {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .Content2-detail-container {
+    max-width: 80%;
+  }
+
+  .Content2-title {
+    width: 90%;
+  }
+
+  .Content3-text-over-img-title {
+    width: 100%;
+    font-size: 12px;
+  }
+  .menuToggle {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .Content3-detail-container {
+    margin: 50px 10px 200px 10px;
+  }
+
+  .Content3-detail-container img {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Content3-detail-img p {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Footer {
+    justify-content: flex-start;
+    height: 200px;
+  }
+  .Navigation-Link-Footer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .Navigation-Link-Footer a {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .Content3-text-over-img-title {
+    width: 100%;
+    font-size: 8px;
+  }
+}
